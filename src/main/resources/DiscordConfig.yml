@@ -1,0 +1,76 @@
+######################################################
+#                                                    #
+#            Discord Configuration Files             #
+#                                                    #
+######################################################
+
+# This is discord config version.
+# PLEASE DON'T TOUCH THIS PATH IF YOU DON'T KNOW THIS!
+DiscordConfigVersion: 2
+
+# Whether enabling discord integration?
+# Before you enabling this discord integration
+# please set your bot token first for not log
+# warn message in console while enabling this plugin.
+# Recommended enabling this discord integration.
+Enable: false
+
+# Put your bot token here, create your bot
+# first in this link: https://discord.com/developers/applications
+# Tutorial for creating bot: https://discordpy.readthedocs.io/en/stable/discord.html
+# Note: You need fill this, if you don't fill this
+#       you can't running this plugin properly.
+BotToken: "<Your Bot Token>"
+
+# Put Guild Id here where bot is invited
+# If this isn't set, its will select all guilds.
+GuildId: "0000000000000000000"
+
+# Put Channel Id here were only can use players
+# profile command in this channel on discord.
+# If this isn't set, command can use in all channel, except voice channel.
+ChannelId: "0000000000000000000"
+
+# Put Role Id here were only user/member in
+# this role can access the command on discord.
+# Note: Don't use User Id or the memberPerms
+#       system isn't run properly.
+Permission:
+  # Put your Role ID here for admin memberPerms (Default memberPerms is Administrator).
+  # This override admin default memberPerms if you want other member use this command.
+  # Default memberPerms can be granted by checkmark Administrator in a role or owner of discord.
+  Admin: "0000000000000000000"
+  # Put your Role ID here for member default memberPerms.
+  # Member without this Role can't use the command.
+  # If this isn't set, all member can use command without memberPerms.
+  Member: "0000000000000000000"
+
+# Change cooldown here for discord commands.
+# Recommended up to 10 seconds. (Default 10 Seconds)
+CooldownCmd: 10
+
+# This function is for take players avatar for set thumbnail in embed.
+# Don't change this, because this default setting for getting players avatar or skin.
+PlayerAvatar: "https://cravatar.eu/avatar/%playerprofile_discord_avatar%/64.png"
+
+# Set activity messages for discord bot system.
+# Restart server to take effect change.
+Activity:
+  # Whether enabling discord activity?
+  Enable: true
+  # Set Mode you want in bot activity.
+  # Available: PLAYING, COMPETING, LISTENING, STREAMING, WATCHING
+  Mode: "PLAYING"
+  # Set messages you want in activity.
+  Message: "Your Activity Message"
+  # Set link streaming for bot activity.
+  # Only work if Activity Mode is STREAMING.
+  Link: "<Your Streaming Link Here>"
+
+# How you use paginating system on player profile?
+# Available Type: SINGLE and MULTIPLE
+Paginating: SINGLE
+
+# Change Timezone here for discord embed commands.
+# List Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+Timezone: default

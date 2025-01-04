@@ -1,0 +1,42 @@
+######################################################
+#                                                    #
+#             Main Configuration Files               #
+#                                                    #
+######################################################
+
+# This is config version.
+# PLEASE DON'T TOUCH THIS PATH IF YOU DON'T KNOW THIS!
+ConfigVersion: 1
+
+# Change Language for plugin here.
+# Available Language: en_US and ind_ID (Default en_US)
+Language: en_US
+
+# Change players profile prefix here.
+# Support: Color Code, Color Hex, and Unicode Chat
+# Note: If you want to use hex color, don't forget to
+#       give "&" symbol before hex code!
+Prefix: "&7[&#00D4FFPlayerProfile&7] "
+
+# We need enable GUI Mode for Player Profile?
+# If enable you can see Player Profile in GUI.
+# If disable you only see Player Profile in chat.
+# Available: true/false (Recommended true)
+GUI: true
+
+# Change cooldown profile command here.
+# This can prevent players from spamming
+# profile in chat or GUI (If Enable).
+# Recommended up to 10 seconds (Default 10 seconds).
+CooldownProfile: 10
+
+# Decimal Integer Format for General Section Profile.
+# Ex: Total Health, Total Health Regen, etc.
+IntegerFormat: '0.#'
+
+# Change Timezone here for ingame chat commands.
+# List Timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+Timezone: default
+
+# DON'T CHANGE THIS SECTION UNLESS YOU DON'T KNOW WHAT ARE YOU DOING!
+Version: ${project.version}
